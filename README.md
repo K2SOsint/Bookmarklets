@@ -10,7 +10,6 @@ The bookmarklets work on the following browsers:
 <img src="https://img.shields.io/badge/Safari-BF40BF?style=for-the-badge&logo=Safari&logoColor=white">
 <img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white">
 <br>
-<br>
   
 # How to use:
 Copy and paste the source code (click on the file to see it) into a bookmark and click the bookmark to activate it. Please note that for a lot of bookmarklets to work, *pop-ups* need to be *enabled* in the settings of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an online website first.
