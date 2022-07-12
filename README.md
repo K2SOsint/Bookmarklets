@@ -4,7 +4,7 @@ A small collection of bookmarklets that are useful for OSINT.
 # Bookmarklets tested on:
 The bookmarklets work on the following browsers:
 <p float="left">
-<img src="https://img.shields.io/badge/Brave_Browser-FF7139?style=for-the-badge&logo=Brave-browser&logoColor=white">
+<img src="https://img.shields.io/badge/Brave-FF7139?style=for-the-badge&logo=Brave&logoColor=white">
 <img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white">
 <img src="https://img.shields.io/badge/Firefox_Browser-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white">
 <img src="https://img.shields.io/badge/Safari-BF40BF?style=for-the-badge&logo=Safari&logoColor=white">
