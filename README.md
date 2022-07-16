@@ -12,6 +12,8 @@ The bookmarklets work on the following browsers:
 <br>
   
 # How to use:
-Copy and paste the JavaScript into a new bookmark at the same place where the URL normally goes. Don't forget to give the bookmark a name so you can remember its function. After saving you can click the bookmark to activate the script. Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an online website first.
+Copy and paste the JavaScript into a new bookmark at the same place where the URL normally goes. Don't forget to give the bookmark a name so you can remember its function. After saving you can click the bookmark to activate the script. 
+
+Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an online website first.
 
 Please use these scripts in a professional manner.
