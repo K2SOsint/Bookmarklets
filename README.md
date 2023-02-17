@@ -19,7 +19,7 @@ Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***
 When you encounter an Analytics code in the source code of a webpage during your investigations, you can click the bookmarklet. Enter the Analytics number in the pop-up screen and press *Enter*. The search will then be executed in search.censys.io. 
 
 ### WhatsMyName bookmarklet
-Click the bookmarklet to enter a username to search for on WhatsMyName.app . Press *enter* and a new tab will open where the search will begin on the site. Happy OSINTing!
+Click the bookmarklet to enter a username to search for on WhatsMyName.app. Press *enter* and a new tab will open where the search will begin on the site. Happy OSINTing!
 
 <br>  
 Please use these scripts in a professional manner.
