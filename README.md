@@ -15,16 +15,16 @@ Copy and paste the JavaScript into a new bookmark at the same place where the UR
 
 Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an online website first.
 
-### Censys bookmarklets
+### Censys bookmarklets :computer:
 When you encounter an Analytics code in the source code of a webpage during your investigations, you can click the bookmarklet. Enter the Analytics number in the pop-up screen and press *Enter*. The search will then be executed in search.censys.io. 
 
-### EmailFinder bookmarklet
+### EmailFinder bookmarklet :e-mail:
 If you want to search for (hidden) e-mailadresses in the text or source code of a webpage, click this bookmarklet. If there are e-mail addresses present, it will return them in a new window. Otherwise a pop-up will state that nothing has been found. 
 
-### FBFriendExtractor bookmarklet
-If you are on the page of a FB profile, click on the friends tab. The URL should be https://facebook.com/ID/friends. After that, refresh the page by pressing F5 and click on the bookmarklet. It will AutoScroll through the page and extract all URLs that contain 'facebook.com' on the page. It's built to only show unique links and exclude links with the word 'photo'. It's still a bit rough around the edges, since it will also collect links from likes and maps. This bookmarklet is easier then using the Chrome extension Instant Data Scraper for example. Do be careful, overuse of this bookmarklet can get your FB account banned. 
+### FBFriendExtractor bookmarklet :iphone:
+If you are on the page of a FB profile, click on the friends tab. The URL should be https://facebook.com/ID/friends. After that, refresh the page by pressing F5 and click on the bookmarklet. It will AutoScroll through the page and extract all URLs that contain 'facebook.com' on the page. It's built to only show unique links and exclude links with the word 'photo'. It's still a bit rough around the edges, since it will also collect links from likes and maps. This bookmarklet is easier then using the Chrome extension Instant Data Scraper for example. Do be careful, overuse of this bookmarklet can get your FB account banned :skull:
 
-### WhatsMyName bookmarklet
+### WhatsMyName bookmarklet :suspect:
 Click the bookmarklet to enter a username to search for on WhatsMyName.app. Press *enter* and a new tab will open where the search will begin on the site. Happy OSINTing!
 
 <br>  
