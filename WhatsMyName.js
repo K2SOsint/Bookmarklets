@@ -7,6 +7,6 @@ function Wmn() {
 	window.open(wmn);
 }
 
-Wmn()
+Wmn();
 
 /*Kudos to @webbreacher and everyone involved in the WhatsMyName project */
