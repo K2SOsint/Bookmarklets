@@ -1,25 +1,33 @@
 javascript:
 
-  var emailreg = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
-  var foundemails = [];
-  var alloftext = document.body.innerText + ' ' + document.documentElement.innerHTML;
-  var matches = alloftext.match(emailreg);
+var mail = [];
+var webpage = document.body.innerHTML;
+var regex = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,20}/g;
 
-function EmailFinder() {
-
-  if (matches && matches.length > 0) {
-    foundemails = matches;
+function MailFinder() {
+  var match;
+  while (match = regex.exec(webpage)) {
+    if (mail.indexOf(match[0]) === -1) mail.push(match[0]);
   }
 
-  if (foundemails.length > 0) {
-    var emaillist = foundemails.join('\n');
-    var popup = window.open();
-    popup.document.write('<pre>' + emaillist + '</pre>');
-  } 
+  var outputWindow = window.open('', 'Mail Output', 'width=600,height=400,scrollbars=yes');
+  outputWindow.document.write('<html><head><title>MailFinder - by K2SOsint</title></head><body>');
 
-  else {
-    alert('No email addresses found on this page.');
+  if (mail.length > 0) {
+    outputWindow.document.write('<h2>E-mail Addresses found on this page:</h2>');
+    outputWindow.document.write('<ul>');
+    mail.forEach(function (email) {
+      outputWindow.document.write('<li>' + email + '</li>');
+    });
+    outputWindow.document.write('</ul>');
+    outputWindow.document.write('<p>Beware of possible false positives, always double-check!</p>');
+  } else {
+    outputWindow.document.write('<h1>No e-mail addresses found.</h1>');
+    outputWindow.document.write('<p>Perform a manual check to be sure.</p>');
   }
+
+  outputWindow.document.write('</body></html>');
+  outputWindow.document.close();
 }
 
-EmailFinder();
+MailFinder();
