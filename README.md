@@ -15,6 +15,9 @@ Copy and paste the JavaScript into a new bookmark at the same place where the UR
 
 Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an online website first.
 
+### Censys bookmarklet :page_with_curl:
+This bookmarklet let's you search for analytics codes in the reponse body with Censys. Just drop in any full analytics code and if Censys has scraped the site, it will return results.
+
 ### EmailFinder bookmarklet :e-mail:
 If you want to search for (hidden) e-mailadresses in the text or source code of a webpage (including in comments), click this bookmarklet. If there are e-mail addresses present, it will return them in a new window. Otherwise a pop-up will state that nothing has been found. 
 
