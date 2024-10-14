@@ -15,12 +15,17 @@ Copy and paste the JavaScript into a new bookmark at the same place where the UR
 
 Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an online website first.
 
+### Builtwith Analytics bookmarklet 🔮
+This bookmarklet takes any analytics code as input and will drop it in Builtwith.com to find any attached domains to the analytics code.
+
 ### Censys bookmarklet :page_with_curl:
-This bookmarklet let's you search for analytics codes in the reponse body with Censys. Just drop in any full analytics code and if Censys has scraped the site, it will return results.
+This bookmarklet will let you search for analytics codes in the reponse body with Censys. Just drop in any full analytics code and if Censys has scraped the site, it will return results.
 
 ### EmailFinder bookmarklet :e-mail:
 If you want to search for (hidden) e-mailadresses in the text or source code of a webpage (including in comments), click this bookmarklet. If there are e-mail addresses present, it will return them in a new window. Otherwise a pop-up will state that nothing has been found. 
 
+### FB Marketplace User 🤑
+Visit a Facebook profile, then click the bookmarklet. This will extract the userID from the source code and add it to the FB marketplace URL. An easy way to see if there is a Marketplace profile active for the user.
 ### FBFriendExtractor bookmarklet :iphone:
 If you are on the page of a FB profile, click on the friends tab. The URL should be https://facebook.com/ID/friends. After that, refresh the page by pressing F5 and click on the bookmarklet. It will AutoScroll through the page and extract all URLs that contain 'facebook.com' on the page. It's built to only show unique links and exclude links with the word 'photo'. It's still a bit rough around the edges, since it will also collect links from likes and maps. This bookmarklet is easier then using the Chrome extension Instant Data Scraper for example. Do be careful, overuse of this bookmarklet can get your FB account banned :skull:
 
