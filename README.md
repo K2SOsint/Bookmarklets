@@ -13,13 +13,13 @@ The bookmarklets work on the following browsers:
 # How to use:
 Copy and paste the JavaScript into a new bookmark at the same place where the URL normally goes. Don't forget to give the bookmark a name so you can remember its function. After saving you can click the bookmark to activate the script. 
 
-Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an online website first.
+Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an active webpage first.
 
-### Builtwith Analytics bookmarklet 🔮
-This bookmarklet takes any analytics code as input and will drop it in Builtwith.com to find any attached domains to the analytics code.
+### AdsAnalysis bookmarklet 
+Made this bookmarklet thanks to the excellent presentation of Craig Silverman. Once installed, click your bookmark when you are on the website to check if ads.txt is present. If so, it will open up a second tab to look in well-known.dev for more information.
 
-### Censys bookmarklet :page_with_curl:
-This bookmarklet will let you search for analytics codes in the reponse body with Censys. Just drop in any full analytics code and if Censys has scraped the site, it will return results.
+### BuiltwithCensys bookmarklet 🔮
+This bookmarklet takes any analytics code as input and will drop it in Builtwith.com and Censys.io to find any attached domains to the analytics code. Merged two of my bookmarklets into one.
 
 ### EmailFinder bookmarklet :e-mail:
 If you want to search for (hidden) e-mailadresses in the text or source code of a webpage (including in comments), click this bookmarklet. If there are e-mail addresses present, it will return them in a new window. Otherwise a pop-up will state that nothing has been found. 
