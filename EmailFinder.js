@@ -2,12 +2,16 @@ javascript:
 
 var mail = [];
 var webpage = document.body.innerHTML;
-var regex = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,20}/g;
+
+var regex = /[a-zA-Z0-9._-]+(?:@| {at} )[a-zA-Z0-9.-]+\.[a-zA-Z]{2,20}/g;
 
 function MailFinder() {
   var match;
   while (match = regex.exec(webpage)) {
-    if (mail.indexOf(match[0]) === -1) mail.push(match[0]);
+
+    var email = match[0].replace(/ {at} /g, '@');
+
+    if (mail.indexOf(email) === -1) mail.push(email);
   }
 
   var outputWindow = window.open('', 'Mail Output', 'width=600,height=400,scrollbars=yes');
