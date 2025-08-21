@@ -1,1 +1,88 @@
-javascript:(function() {const exifViewerUrl='https://exif.tools/';let images=document.getElementsByTagName('img');if(images.length===0){alert('No images found on this page.');return;}let modal=document.createElement('div');modal.id='exif-modal';modal.style.cssText='position:fixed;z-index:99999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.5);padding:20px;box-sizing:border-box;';let content=document.createElement('div');content.style.cssText='background-color:#fefefe;margin:5% auto;padding:20px;border:1px solid #888;width:80%;font-family:Arial,sans-serif;';let closeButton=document.createElement('span');closeButton.innerHTML='&times;';closeButton.style.cssText='color:#aaa;float:right;font-size:28px;font-weight:bold;cursor:pointer;';closeButton.onclick=function(){document.body.removeChild(modal);};let title=document.createElement('h2');title.innerText='EXIF Data Extractor';title.style.marginTop='0';let table=document.createElement('table');table.style.cssText='width:100%;border-collapse:collapse;';let header=table.createTHead().insertRow();header.innerHTML='<th style="border:1px solid #ddd;padding:8px;text-align:left;">Preview</th><th style="border:1px solid #ddd;padding:8px;text-align:left;">Image URL</th><th style="border:1px solid #ddd;padding:8px;text-align:left;">Check EXIF</th>';let tbody=table.createTBody();for(let i=0;i<images.length;i++){let img=images[i];let src=img.src;if(!src||src.startsWith('data:')){continue;}let row=tbody.insertRow();row.style.border='1px solid #ddd';let cell1=row.insertCell();cell1.innerHTML=%60<img src="${src}" style="max-width:100px;max-height:100px;object-fit:contain;">%60;cell1.style.padding='8px';let cell2=row.insertCell();cell2.innerHTML=%60<a href="${src}" target="_blank" style="word-break:break-all;">${src}</a>%60;cell2.style.padding='8px';let cell3=row.insertCell();let checkLink=document.createElement('a');checkLink.href=exifViewerUrl+src;checkLink.innerText='Check Data';checkLink.target='_blank';checkLink.style.color='#007bff';cell3.appendChild(checkLink);cell3.style.padding='8px';}if(tbody.rows.length===0){let p=document.createElement('p');p.innerText='No images with external URLs were found for checking.';content.appendChild(p);}let footer=document.createElement('p');footer.innerHTML='Created by <a href="https://github.com/paulpogoda" target="_blank">Pavel Bannikov</a> for <a href="https://provereno.media" target="_blank">Provereno Media</a>';footer.style.cssText='margin-top:20px;font-size:12px;color:#555;text-align:center;';content.appendChild(closeButton);content.appendChild(title);content.appendChild(table);content.appendChild(footer);modal.appendChild(content);document.body.appendChild(modal);document.addEventListener('keydown',function(event){if(event.key==="Escape"){let existingModal=document.getElementById('exif-modal');if(existingModal){document.body.removeChild(existingModal);}}});})();
+javascript:(function() {
+  const exifViewerUrl = 'https://exif.tools/';
+  let images = document.getElementsByTagName('img');
+
+  if (images.length === 0) {
+    alert('No images found on this page.');
+    return;
+  }
+
+  let modal = document.createElement('div');
+  modal.id = 'exif-modal';
+  modal.style.cssText = 'position:fixed;z-index:99999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.5);padding:20px;box-sizing:border-box;';
+
+  let content = document.createElement('div');
+  content.style.cssText = 'background-color:#fefefe;margin:5% auto;padding:20px;border:1px solid #888;width:80%;font-family:Arial,sans-serif;';
+
+  let closeButton = document.createElement('span');
+  closeButton.innerHTML = '&times;';
+  closeButton.style.cssText = 'color:#aaa;float:right;font-size:28px;font-weight:bold;cursor:pointer;';
+  closeButton.onclick = function() {
+    document.body.removeChild(modal);
+  };
+
+  let title = document.createElement('h2');
+  title.innerText = 'EXIF Data Extractor';
+  title.style.marginTop = '0';
+
+  let table = document.createElement('table');
+  table.style.cssText = 'width:100%;border-collapse:collapse;';
+
+  let header = table.createTHead().insertRow();
+  header.innerHTML = '<th style="border:1px solid #ddd;padding:8px;text-align:left;">Preview</th><th style="border:1px solid #ddd;padding:8px;text-align:left;">Image URL</th><th style="border:1px solid #ddd;padding:8px;text-align:left;">Check EXIF</th>';
+
+  let tbody = table.createTBody();
+
+  for (let i = 0; i < images.length; i++) {
+    let img = images[i];
+    let src = img.src;
+    if (!src || src.startsWith('data:')) continue;
+
+    let row = tbody.insertRow();
+    row.style.border = '1px solid #ddd';
+
+    let cell1 = row.insertCell();
+    cell1.innerHTML = `<img src="${src}" style="max-width:100px;max-height:100px;object-fit:contain;">`;
+    cell1.style.padding = '8px';
+
+    let cell2 = row.insertCell();
+    cell2.innerHTML = `<a href="${src}" target="_blank" style="word-break:break-all;">${src}</a>`;
+    cell2.style.padding = '8px';
+
+    let cell3 = row.insertCell();
+    let checkLink = document.createElement('a');
+    checkLink.href = exifViewerUrl + src;
+    checkLink.innerText = 'Check Data';
+    checkLink.target = '_blank';
+    checkLink.style.color = '#007bff';
+    cell3.appendChild(checkLink);
+    cell3.style.padding = '8px';
+  }
+
+  if (tbody.rows.length === 0) {
+    let p = document.createElement('p');
+    p.innerText = 'No images with external URLs were found for checking.';
+    content.appendChild(p);
+  }
+
+  let footer = document.createElement('p');
+  footer.innerHTML = 'Created by <a href="https://github.com/paulpogoda" target="_blank">Pavel Bannikov</a> for <a href="https://provereno.media" target="_blank">Provereno Media</a>';
+  footer.style.cssText = 'margin-top:20px;font-size:12px;color:#555;text-align:center;';
+
+  content.appendChild(closeButton);
+  content.appendChild(title);
+  content.appendChild(table);
+  content.appendChild(footer);
+
+  modal.appendChild(content);
+  document.body.appendChild(modal);
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key == "Escape") {
+      let existingModal = document.getElementById('exif-modal');
+      if (existingModal) {
+        document.body.removeChild(existingModal);
+      }
+    }
+  });
+})();
