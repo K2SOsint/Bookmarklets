@@ -24,6 +24,9 @@ This bookmarklet takes any analytics code as input and will drop it in Builtwith
 ### EmailFinder bookmarklet :e-mail:
 If you want to search for (hidden) e-mailadresses in the text or source code of a webpage (including in comments), click this bookmarklet. If there are e-mail addresses present, it will return them in a new window. Otherwise a pop-up will state that nothing has been found. 
 
+### Exif Data Extractor Bookmarklet
+This bookmarklet scans all images on the current webpage and allows you to check their EXIF metadata easily using the service https://exif.tools/.
+
 ### FB Marketplace User 🤑
 Visit a Facebook profile, then click the bookmarklet. This will extract the userID from the source code and add it to the FB marketplace URL. An easy way to see if there is a Marketplace profile active for the user.
 ### FBFriendExtractor bookmarklet :iphone:
