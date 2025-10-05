@@ -15,11 +15,14 @@ Copy and paste the JavaScript into a new bookmark at the same place where the UR
 
 Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***enabled*** in the ***settings*** of the browser. Also, do not execute a bookmarklet from the blank or starting page of a browser, but go to an active webpage first.
 
-### AdsAnalysis bookmarklet 
+### AdsAnalysis bookmarklet 📈
 Made this bookmarklet thanks to the excellent presentation of Craig Silverman on OSMOSIS 2024. Once installed, click your bookmark when you are on the website to check if ads.txt is present. If so, it will open up a second tab to look in well-known.dev for more information. Make sure to login to well-know.dev to see more.
 
 ### BuiltwithCensys bookmarklet 🔮
 This bookmarklet takes any analytics code as input and will drop it in Builtwith.com and Censys.io to find any attached domains to the analytics code. Merged two of my bookmarklets into one.
+
+### CTI Companion 🐕‍🦺
+Quick & dirty bookmarklet that supports in a CTI investigation. Either select the domain, IP or hash you want to investigate and click the bookmarklet. This will result in several buttons leading you to searches such as Shodan, VT, Urlscan and more. If you do not select anything it will default to the domain you are on. If you select something else it will still show you some search options. Comes with a close button as well. 
 
 ### EmailFinder bookmarklet :e-mail:
 If you want to search for (hidden) e-mailadresses in the text or source code of a webpage (including in comments), click this bookmarklet. If there are e-mail addresses present, it will return them in a new window. Otherwise a pop-up will state that nothing has been found. 
