@@ -48,6 +48,7 @@ javascript:(function(){
     domain:[
       ["VirusTotal",`https://www.virustotal.com/gui/domain/${encoded}`],
       ["URLScan",`https://urlscan.io/search/#${encoded}`],
+      ["Host.io",`https://host.io/${encoded}`],
       ["Shodan",`https://www.shodan.io/search?query=hostname%3A${encoded}`],
       ["Whois",`https://www.whois.com/whois/${encoded}`],
       ["crt.sh",`https://crt.sh/?q=${encoded}`],
