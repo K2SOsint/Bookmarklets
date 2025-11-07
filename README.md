@@ -24,6 +24,9 @@ This bookmarklet takes any analytics code as input and will drop it in Builtwith
 ### CTI Companion 🐕‍🦺
 Quick & dirty bookmarklet that supports in a CTI investigation. Either select the domain, IP or hash you want to investigate and click the bookmarklet. This will result in several buttons leading you to searches such as Shodan, VT, Urlscan and more. If you do not select anything it will default to the domain you are on. If you select something else it will still show you some search options. Comes with a close button as well. 
 
+### [DocufinderJS](https://github.com/ndr-repo/DocuFinderJS) 📃
+Collaboration with great professional. DocuFinder is an external attack surface monitoring (EASM) tool that automates traditional OSINT techniques to find externally accessible documents within a target domain. 
+
 ### EmailFinder bookmarklet :e-mail:
 If you want to search for (hidden) e-mailadresses in the text or source code of a webpage (including in comments), click this bookmarklet. If there are e-mail addresses present, it will return them in a new window. Otherwise a pop-up will state that nothing has been found. 
 
