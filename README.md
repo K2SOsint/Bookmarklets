@@ -18,8 +18,8 @@ Please note that for a lot of bookmarklets to work, ***pop-ups*** need to be ***
 ### AdsAnalysis bookmarklet 📈
 Made this bookmarklet thanks to the excellent presentation of Craig Silverman on OSMOSIS 2024. Once installed, click your bookmark when you are on the website to check if ads.txt is present. If so, it will open up a second tab to look in well-known.dev for more information. Make sure to login to well-know.dev to see more.
 
-### BuiltwithCensys bookmarklet 🔮
-This bookmarklet takes any analytics code as input and will drop it in Builtwith.com and Censys.io to find any attached domains to the analytics code. Merged two of my bookmarklets into one.
+### Builtwith bookmarklet 🔮
+This bookmarklet takes any analytics code as input and will drop it in Builtwith.com to find any attached domains to the analytics code.
 
 ### CTI Companion 🐕‍🦺
 Quick & dirty bookmarklet that supports in a CTI investigation. Either select the domain, IP or hash you want to investigate and click the bookmarklet. This will result in several buttons leading you to searches such as Shodan, VT, Urlscan and more. If you do not select anything it will default to the domain you are on. If you select something else it will still show you some search options. Comes with a close button as well. 
