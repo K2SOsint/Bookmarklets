@@ -36,8 +36,11 @@ Visit a Facebook profile, then click the bookmarklet. This will extract the user
 ### FBFriendExtractor bookmarklet :iphone:
 If you are on the page of a FB profile, click on the friends tab. The URL should be https://facebook.com/ID/friends. After that, refresh the page by pressing F5 and click on the bookmarklet. It will AutoScroll through the page and extract all URLs that contain 'facebook.com' on the page. It's built to only show unique links and exclude links with the word 'photo'. It's still a bit rough around the edges, since it will also collect links from likes and maps. This bookmarklet is easier then using the Chrome extension Instant Data Scraper for example. Do be careful, overuse of this bookmarklet can get your FB account banned :skull:
 
-### LinkFinder bookmarklet 🔗:
+### LinkFinder bookmarklet 🔗
 If you want to search for (hidden) links in the text or source code of a webpage (including in comments), click this bookmarklet. If there are links present, it will return them in a new window.
+
+### PeakyFinder bookmarklet 🍀
+This bookmarklet lets you search for most common txt files behind a website, including robots.txt, sitemap.xml and more. Gives you the option to see the content in a new tab in your browser as well as exporting it as a csv file.
 
 ### WhatsMyName bookmarklet :suspect:
 Click the bookmarklet to enter a username to search for on WhatsMyName.app. Press *enter* and a new tab will open where the search will begin on the site. Happy OSINTing!
