@@ -294,7 +294,7 @@ javascript:
         </style>
       </head>
       <body>
-        <h1>Site File Check</h1>
+        <h1>PeakyFinder</h1>
         <p><strong>Domain:</strong> ${escapeHtml(domain)}</p>
         <p><strong>Collected (UTC):</strong> ${escapeHtml(utcNow)}</p>
 
